@@ -1,0 +1,93 @@
+.porfrosh {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .porfrosh__center {
+    width: 84%;
+    height: 410px;
+    border: 2px solid #e0e0e2;
+    border-radius: 10px;
+    padding: 0px 4px;
+    .myporfrosh {
+      height: 330px;
+    }
+    .porfrosh__title {
+      width: var(--whidth);
+      height: 100px;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+      column-gap: 5px;
+      position: relative;
+      & a {
+        position: absolute;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: var(--iran);
+        left: 25px;
+        top: 30px;
+        color: #19bfd3;
+      }
+
+      & h5 {
+        font-family: var(--iran);
+        font-size: 20px;
+        font-weight: bold;
+        color: #0c0c0c;
+      }
+    }
+    .porfrosh__item {
+      flex-flow: column wrap !important;
+      justify-content: flex-start;
+      height: 300px;
+
+      .porfrosh__item__top,
+      .porfrosh__item__center,
+      .porfrosh__item__bottom {
+        column-gap: 10px;
+        padding: 5px;
+        box-sizing: border-box;
+        height: 100px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        column-gap: 5px;
+        & img {
+          width: 85px;
+          height: 85px;
+        }
+        & span {
+          font-family: var(--number);
+          color: #19bfd3;
+          font-size: 33px;
+          font-weight: bold;
+          padding-right: -10px;
+        }
+        & h5 {
+          font-family: var(--iran);
+          font-size: 13px;
+          color: #3f4064;
+          text-align: right;
+          line-height: 25px;
+          font-weight: normal;
+          line-height: 25px;
+        }
+      }
+    }
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #caccce;
+  }
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 14px;
+    color: #424750;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,23 @@
+.jashnvare2__banner {
+  width: var(--width);
+  height: 265px;
+  margin: 20px 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+
+  .jashnvare2__banner__center {
+    width: 84%;
+    height: inherit;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    & img {
+      width: 655px;
+      height: 265px;
+      border-radius: 10px;
+    }
+  }
+}

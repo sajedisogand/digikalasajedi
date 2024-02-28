@@ -1,0 +1,85 @@
+.amazing__kala {
+  width: var(--width);
+  height: 110px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  .amazing__kala__center {
+    width: 98%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aqua;
+    background: #f0eff1;
+    background: -webkit-linear-gradient(91deg, #f0eff1 0%, #e7dae5 100%);
+    background: linear-gradient(91deg, #f0eff1 0%, #e7dae5 100%);
+    & svg {
+      transform: scale(0.8) !important;
+    }
+
+    .timer {
+      width: 270px;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: flex-start;
+      justify-content: center;
+      row-gap: 15px;
+      .top {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: flex-start;
+        & h5 {
+          font-size: 14px;
+          font-family: var(--iran);
+          color: #b12ba4;
+        }
+      }
+      .bottom {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        column-gap: 10px;
+        .hour {
+          width: 41px;
+          height: 41px;
+          border-radius: 5px;
+          background-color: white;
+          display: flex;
+          flex-flow: column wrap;
+          align-items: center;
+          justify-content: center;
+          color: #b12ba4;
+          padding: 1px;
+          & h3 {
+            font-size: 15px;
+            font-family: var(--number);
+            font-weight: bold;
+          }
+          & h4 {
+            font-size: 10px;
+            font-weight: normal;
+            font-family: var(--number);
+          }
+        }
+        & h5 {
+          font-size: 12px;
+          font-family: var(--iran);
+          color: #b12ba4;
+        }
+        & svg {
+          width: 24px !important;
+          height: 24px !important;
+          transform: scale(0.7) !important;
+        }
+      }
+    }
+  }
+}

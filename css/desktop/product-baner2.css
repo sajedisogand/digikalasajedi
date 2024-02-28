@@ -1,0 +1,14 @@
+.product__baner2 {
+  width: var(width);
+  height: 170px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  & img {
+    width: 84%;
+    height: inherit;
+    border-radius: 20px;
+  }
+}

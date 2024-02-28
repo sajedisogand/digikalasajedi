@@ -1,0 +1,113 @@
+.story {
+  width: var(--width);
+  height: 170px;
+  margin-top: 2px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: white;
+  .story__center {
+    width: 85%;
+    height: inherit;
+    cursor: pointer;
+    .story1 {
+      width: var(--width);
+      height: 100%;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: space-between;
+
+      .story__img {
+        width: inherit;
+        height: 60%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        & img {
+          width: 74px;
+          height: 74px;
+          object-fit: cover;
+          border-radius: 50%;
+          outline: 3px solid var(--storycolor);
+          outline-offset: 3px;
+          margin-bottom: 10px;
+        }
+        .live {
+          border: 5px solid var(--storycolor);
+        }
+
+        .time__story,
+        .live__story {
+          position: absolute;
+          bottom: 0px;
+          border-radius: 5px;
+          border: 2px solid white;
+          display: flex;
+          flex-flow: row wrap;
+          align-items: center;
+          justify-content: center;
+        }
+        .time__story {
+          width: 35px;
+          height: 23px;
+          background-color: #fdecf5;
+
+          & h5 {
+            font-family: var(--number);
+            font-size: 11px;
+            color: var(--storycolor);
+            font-weight: normal;
+          }
+        }
+        .live__story {
+          width: 30px;
+          height: 23px;
+          background-color: var(--storycolor);
+          & h5 {
+            font-family: var(--number);
+            font-size: 11px;
+            color: white;
+            font-weight: normal;
+          }
+        }
+      }
+      .story__text {
+        width: inherit;
+        height: 40%;
+        padding-top: 5px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        & h5 {
+          font-family: var(--number);
+          font-size: 12px;
+          text-align: center;
+          line-height: 22px;
+          padding: 0 10px;
+          font-weight: normal;
+          color: #23254e;
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 1px solid #caccce;
+  }
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size: 14px;
+    color: #424750;
+    font-weight: bold;
+  }
+}

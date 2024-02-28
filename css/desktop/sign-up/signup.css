@@ -1,0 +1,84 @@
+.stracture {
+  width: 400px;
+  height: 440px;
+  border: 2px solid #e0e0e2;
+  border-radius: 10px;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 32px;
+  .logo {
+    width: var(--width);
+    display: block;
+    text-align: center;
+    & svg {
+      width: 150px !important;
+      height: 40px !important;
+    }
+  }
+  & h3 {
+    font-size: 18px;
+    font-family: var(--iran);
+    color: #0c0c0c;
+    margin: 16px 0;
+  }
+  & h5 {
+    font-size: 12px;
+    color: #2b2b2b;
+    font-family: var(--iran);
+    font-weight: normal;
+    margin: 5px 0;
+  }
+  & input[type="text"] {
+    all: unset;
+    width: 330px;
+    height: 50px;
+    border: 2px solid #19bfd3;
+    border-radius: 10px;
+    margin-top: 25px;
+    padding: 8px;
+    box-sizing: border-box;
+    &:focus {
+      border: 2px solid #ef4056;
+    }
+  }
+  .dont-empty {
+    font-size: 12px;
+    color: #ef4056;
+    font-family: var(--iran);
+    margin-top: 5px;
+  }
+  & input[type="submit"] {
+    all: unset;
+    width: 330px;
+    height: 45px;
+    background-color: #ef4056;
+    border-radius: 8px;
+    color: white;
+    margin-top: 30px;
+    font-family: var(--iran);
+    font-size: 14px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .role {
+    color: #0c0c0c;
+    font-size: 10.3px;
+    font-family: var(--iran);
+    margin-top: 20px;
+    display: block;
+    width: var(--width);
+    text-align: center;
+    & a {
+      text-decoration: none;
+      color: #008eb2;
+    }
+  }
+}

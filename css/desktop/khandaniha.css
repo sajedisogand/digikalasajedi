@@ -1,0 +1,72 @@
+.khandaniha {
+  width: var(width);
+  height: 400px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+
+  .head {
+    width: 84%;
+    height: 20%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    & h5 {
+      font-family: var(--iran);
+      color: black;
+      font-size: 15px;
+    }
+    & a {
+      text-decoration: none;
+      font-size: 13px;
+      color: #19bfd3;
+      font-family: var(--iran);
+      word-spacing: -2px;
+      font-weight: bold;
+    }
+  }
+  .body {
+    width: 84%;
+    height: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    & a {
+      width: 320px;
+      height: 280px;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: flex-start;
+      row-gap: 10px;
+      text-decoration: none;
+      border: 1px solid #e0e0e2;
+      border-radius: 10px;
+      background-color: white;
+      & img {
+        width: 320px;
+        height: 200px;
+        border-radius: 10px 10px 0 0;
+      }
+      & div {
+        width: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 13px;
+        line-height: 25px;
+        flex-flow: row wrap;
+        & h5 {
+          font-family: var(--iran);
+          font-weight: normal;
+          font-size: 13px;
+          color: #0c0c0c;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.amazing__banner{
+    width: var(--width);
+    height: 65px;
+    background-color: #ef4056;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}

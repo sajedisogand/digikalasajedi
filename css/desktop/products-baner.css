@@ -1,0 +1,22 @@
+.products__baner {
+  width: var(width);
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  .products__baner__center {
+    width: 84%;
+    height: inherit;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    & img {
+      width: 321px;
+      height: 241px;
+      border-radius: 10px;
+    }
+  }
+}
